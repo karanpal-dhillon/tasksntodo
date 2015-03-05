@@ -20,13 +20,13 @@ public class SignupController {
 	 private static final String SIGNUP_VIEW_NAME = "signup/signup"; 
 	
 	
-//	@RequestMapping(value="/register",method=RequestMethod.GET)
-//	public ModelAndView register(){
-//		ModelAndView modelAndView=new ModelAndView(SIGNUP_VIEW_NAME);
-//		User user=new User();
-//		modelAndView.addObject("user",user);
-//		return modelAndView;
-//	}
+	@RequestMapping(value="/register",method=RequestMethod.GET)
+	public ModelAndView register(){
+		ModelAndView modelAndView=new ModelAndView(SIGNUP_VIEW_NAME);
+		User user=new User();
+		modelAndView.addObject("user",user);
+		return modelAndView;
+	}
 	@RequestMapping(value="/save",method=RequestMethod.POST)
 	public ModelAndView save(@ModelAttribute User user, Errors errors,
 		      RedirectAttributes redirectAttr, Locale locale, HttpServletRequest request){

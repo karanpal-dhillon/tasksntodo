@@ -1,6 +1,5 @@
 package com.tasks.service.impl;
 
-import org.hibernate.SessionFactory;
 import org.springframework.dao.DataAccessException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

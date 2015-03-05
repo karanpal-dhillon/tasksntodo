@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head th:substituteby="includes/headTag :: headTag">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Travel Portal Home Page</title>
+
+
+</head>
+
+<body>
+	<!--Start Form -->
+		<!--Start Header -->
+			<div layout:fragment="header">
+				<div layout:include="includes/header::header" ></div>
+			</div>
+		<!--End Header -->
+		
+		<!--Start Body -->
+			<div layout:fragment="bodyContent"></div>
+		<!-- End Body -->
+		
+		<!-- Start Footer -->
+			<section layout:fragment="footerContent"></section>
+		<!-- End Footer -->
+	<!-- End Form -->
+</body>
+</html>
